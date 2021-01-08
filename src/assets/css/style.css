@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+
+.header {
+  background-color: tomato;
+  color: white;
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.right {
+  display: flex;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.nav {
+  margin: 1rem;
+}
+
+.carousel {
+  height: 20rem;
+  width: 20rem;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 1em;
+  display: flex;
+  align-items: flex-end;
+}
+
+.carousel-wrapper {
+  justify-content: center;
+  align-content: center;
+  padding: 3rem 4rem 2rem 4rem;
+}
+
+a {
+  color: white;
+  font-size: 1.5em;
+  outline: none;
+}
+.cara {
+  height: fit-content;
+  padding: 1em;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  width: -webkit-fill-available;
+}
+
+.search {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-input {
+  margin: 1rem;
+  border-radius: 50px;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 18px;
+}
+
+.button-class {
+  display: inline-block;
+  border-radius: 16px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: auto;
+  cursor: pointer;
+  outline: none;
+  margin: 1rem;
+}
+.page {
+  max-width: 1500px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 742px) {
+  .right {
+    display: none;
+  }
+  .header {
+    justify-content: center;
+    min-height: 60px;
+  }
+
+  .carousel-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.lds-default {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-default div {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  animation: lds-default 1.2s linear infinite;
+}
+.lds-default div:nth-child(1) {
+  animation-delay: 0s;
+  top: 37px;
+  left: 66px;
+}
+.lds-default div:nth-child(2) {
+  animation-delay: -0.1s;
+  top: 22px;
+  left: 62px;
+}
+.lds-default div:nth-child(3) {
+  animation-delay: -0.2s;
+  top: 11px;
+  left: 52px;
+}
+.lds-default div:nth-child(4) {
+  animation-delay: -0.3s;
+  top: 7px;
+  left: 37px;
+}
+.lds-default div:nth-child(5) {
+  animation-delay: -0.4s;
+  top: 11px;
+  left: 22px;
+}
+.lds-default div:nth-child(6) {
+  animation-delay: -0.5s;
+  top: 22px;
+  left: 11px;
+}
+.lds-default div:nth-child(7) {
+  animation-delay: -0.6s;
+  top: 37px;
+  left: 7px;
+}
+.lds-default div:nth-child(8) {
+  animation-delay: -0.7s;
+  top: 52px;
+  left: 11px;
+}
+.lds-default div:nth-child(9) {
+  animation-delay: -0.8s;
+  top: 62px;
+  left: 22px;
+}
+.lds-default div:nth-child(10) {
+  animation-delay: -0.9s;
+  top: 66px;
+  left: 37px;
+}
+.lds-default div:nth-child(11) {
+  animation-delay: -1s;
+  top: 62px;
+  left: 52px;
+}
+.lds-default div:nth-child(12) {
+  animation-delay: -1.1s;
+  top: 52px;
+  left: 62px;
+}
+@keyframes lds-default {
+  0%,
+  20%,
+  80%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+.inputform {
+  background-image: url(../images/background.jpg);
+  min-height: 10rem;
+}
+.loader {
+  display: none;
+  padding: 3rem;
+  justify-content: center;
+}
+
+.cora {
+  padding: 3rem 1rem 2rem 1rem;
+}
+
+@media only screen and (min-width: 1500px) {
+  .header {
+    max-width: 1500px;
+    margin: auto;
+    position: sticky;
+  }
+}
+
+.invalid-input {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+  padding: 3rem;
+  color: white;
+}
+.try-again {
+  border-radius: 12px;
+  width: 6em;
+  outline: none;
+  color: white;
+  background-color: rgb(1, 42, 179);
+  margin: 1em;
+  font-size: 1em;
+  cursor: pointer;
+}
+h2 {
+  text-align: center;
+}
